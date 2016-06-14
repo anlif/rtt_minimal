@@ -6,6 +6,8 @@ MAKEFILE_NAME := $(MAKEFILE_LIST)
 MAKEFILE_DIR := $(dir $(MAKEFILE_NAME) ) 
 
 SDK_DIR = /Users/andreas/src/nordic/SDK11
+RTT_DIR = /Users/andreas/src/nordic/RTT_Implementation_141217
+
 TEMPLATE_PATH = $(SDK_DIR)/components/toolchain/gcc
 ifeq ($(OS),Windows_NT)
 include $(TEMPLATE_PATH)/Makefile.windows
@@ -39,7 +41,6 @@ SIZE            := '$(GNU_INSTALL_ROOT)/bin/$(GNU_PREFIX)-size'
 remduplicates = $(strip $(if $1,$(firstword $1) $(call remduplicates,$(filter-out $(firstword $1),$1))))
 
 # RTT build config
-RTT_DIR = /Users/andreas/src/nordic/RTT_Implementation_141217
 RTT_SRCS = $(RTT_DIR)/RTT/SEGGER_RTT.c \
 	   $(RTT_DIR)/RTT/SEGGER_RTT_printf.c
 
