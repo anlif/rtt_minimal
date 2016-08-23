@@ -5,7 +5,7 @@ The code and Makefile are based on the "blinky" example project from SDK 11 by N
 
 # Running
 ## Prerequisites
-Install Nordic SDK11 and JLink debugging tools. Connect a nRF52 dev kit to your USB port. 
+Install Nordic SDK11 and JLink debugging tools. You also need an [RTT implementation](http://download.segger.com/J-Link/RTT/RTT_Implementation_141217.zip) that will run on your microcontroller. Connect a nRF52 dev kit to your USB port. 
 
 ## Configure the Makefile
 Set ``SDK_DIR`` to the path to the Nordic SDK and ``RTT_DIR`` to the SEGGER RTT dir in the Makefile.
