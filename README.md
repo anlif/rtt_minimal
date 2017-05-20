@@ -21,7 +21,7 @@ Open a terminal and run:
 
 ``JLinkExe -device NRF52 -speed 4000 -if SWD``
 
-type ``connect``, then hit enter
+type ``connect``, then hit enter. Alternatively, add the flag ``-AutoConnect`` to the JLinkExe command.
 
 ## Connect to RTT
 Open a new terminal, then run ``JLinkRTTClient``.
